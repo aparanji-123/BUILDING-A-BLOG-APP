@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>LOGIN</h1>
+        <form id="loginForm">
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        <p id="loginStatus"></p>
+        <p>Don't have an account? <button class="sign"><a href="/signup/signup.html" style="text-decoration: none;">Sign Up</a></button></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
