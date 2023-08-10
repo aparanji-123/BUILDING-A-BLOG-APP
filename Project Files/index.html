@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog_App</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <section id="section1" style="background: rgb(238,174,202);
+  background: radial-gradient(circle,rgba(238,174,202,1) 0%,rgba(148,187,233,1) 100%);">
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" href="index.html">New blog</a></li>
+                <li><a class="dropdown-item" href="index.html">Updates</a></li>
+                <li><a class="dropdown-item" href="index.html">Themes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="resourcesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" href="index.html">Popular topics</a></li>
+                <li><a class="dropdown-item" href="index.html">More liked</a></li>
+                <li><a class="dropdown-item" href="index.html">Currently featured</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="btns">
+          <button type="submit" class="btn btn-dark" style="border-radius: 20px;"><a href="login/login.html" style="color: rgb(255, 255, 255); text-decoration: none;">Login</a></button>
+          <button type="submit" class="btn btn-dark" style="border-radius: 20px;"><a href="signup/signup.html" style="color: rgb(255, 255, 255); text-decoration: none;">SignUp</a></button>
+          <button type="submit" class="btn btn-dark" style="border-radius: 20px;"><a href="/pp/notifications.html"style="color: rgb(255, 255, 255); text-decoration: none;">Notifications</a></button>
+          <!-- <button type="submit" class="update" class="btn btn-check" style="border-radius: 20px; ">Updates</button> -->
+        </div>
+      </div>
+    </nav><br>
+    <!-- ============================================ Search Bar ======================================= -->
+    <center><h1 class="heading"style="font-weight: bold; color:rgb(0, 0, 102);">Blog Hub :)</h1></center>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <p id="title" class="fs-2" style="color:rgb(0, 0, 102);"><strong>Hangout with captivating content.....</strong></p>
+          <div class="input-field">
+            <input type="search" id="searchInput" placeholder="Search for something (eg:Yoga)">
+            <button class="btn btn-dark" id="searchButton">Search </button>
+            <ul id="searchSuggestions"></ul>
+          </div>
+        </div>
+        <div class="col">
+          <p class="fs-4" style="color: rgb(0, 0, 102);">Delivering compulsive articles about food,travel,fashion, fitness, tech, gaming, sports,movies
+             and many more trending insights</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ================================================Tab Names============================================ -->
+  <section style="background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active cato1" data-bs-toggle="pill" href="#tab1">View all</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab2">Designs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab3">Tech</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab4">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab5">Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab6">Fitness</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab7">Fashion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab8">Gaming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab9">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab10">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab11">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab12">Management</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5" id="tabContentContainer">
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+      <!-- =======================================Card elements================================= -->
+        </div>
+        <!-- =============================== design =================================== -->
+        <div class="tab-pane" id="tab2">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img1.jpg" alt="Image" style="height:350px; width:600px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Sienna Rose</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">19 Dec 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">UX review presentation</h4>
+                  <p class="card-text">A UX review is an evaluation process that assesses the user experience of a product or website,focusing on aspects like usability,accessibility,design and satisfaction. 
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img2.jpg" style="height: 350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Johnson</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">29 Nov 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Design</h4>
+                  <p class="card-text">Design is the process of intentionally crafting solutions to problems, combining creativity, functionality, and aesthetics to achieve effective and appealing outcomes.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================================== Tech ======================================-->
+        <div class="tab-pane" id="tab3">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/img3.jpg" style="height:350px; width:600px;" alt="Image" style="height: 390px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Thomas Lee</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">20 Sep 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Macbook Pro</h4>
+                  <p class="card-text">Macbook pro with its sleek design, Touch Bar, and macOS operating system, 
+                    the MacBook Pro offers a seamless and productive user experience.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/img4.jpg" style="height:350px; width:600px;" alt="Image" style="height: 390px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Frank Finn</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">14 Apr 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Headphones</h4>
+                  <p class="card-text">The integration of Apple's H1 chip enables seamless pairing, hands-free "Hey Siri" commands,
+                     and extended battery life,making popular choice among Apple users.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ===========================================travel========================================= -->
+
+        <div class="tab-pane" id="tab4">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/img5.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Hudson Lee</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">30 Jan 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Eifel Tower</h4>
+                  <p class="card-text">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Locally nicknamed "La dame de fer", it was constructed from 1887 to 1889 as the centerpiece of the 1889 World's Fair.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/img6.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Steve Harry</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 Apr 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Machu Picchu</h4>
+                  <p class="card-text">Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it’s renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =========================================== food ============================================= -->
+        <div class="tab-pane" id="tab5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/img7.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Martin Duke</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">2 Nov 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Momos</h4>
+                  <p class="card-text">Momo is a type of steamed filled dumpling in Tibetan and Nepali cuisine that is also popular in neighbouring Bhutan and India.Momo is usually served with a sauce known as achar influenced spices used within many South Asian cuisines.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/img8.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">John Patrick</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">14 June 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Sandwich</h4>
+                  <p class="card-text">A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ==================================================fitness=============================================== -->
+        <div class="tab-pane" id="tab6">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/img9.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Mary Jewel</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">2 Mar 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Cycling</h4>
+                  <p class="card-text">Cycling is mainly an aerobic activity, which means that your heart, blood vessels and lungs all get a workout. You will breathe deeper, perspire and experience increased body temperature, which will improve your overall fitness level.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/img10.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Scott David</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">29 Dec 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Yoga</h4>
+                  <p class="card-text">Yoga is a practice that connects the body, breath, and mind. It uses physical postures, breathing exercises, and meditation to improve overall health. Yoga was developed as a spiritual practice thousands of years ago.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ================================================= Fashion =============================================-->
+        <div class="tab-pane" id="tab7">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/img11.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Blair Eadie</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">29 Dec 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Atlantic-Pacific</h4>
+                  <p class="card-text">Atlantic Pacific Global Logistics are part of Atlantic Pacific Group, a privately owned British business operating from multiple locations around the UK, USA and Ireland. Established in 2000, we have been providing global supply chain solutions for over 20 years.She has worked as an influencer with many brands, including Nordstrom, Amazon, Sephora, CoverGirl, Gucci and many more.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img12.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Glory Rya</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 Jan 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Glamazon Diaries</h4>
+                  <p class="card-text">Glamazon Diaries is the perfect blend of fashion, beauty, lifestyle, travel, wellness,and a touch of wedding advice. One of the earliest fashion blogs in Washington D.C.,Glamazon Diaries was created in 2007 by Makeda Saggau-Sackey. As an influencer in the body positive movement,she’s committed to making women of all shapes and sizes feel confident in their skin, and do so on a budget. </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--=========================================== Gaming ============================================-->
+        
+        <div class="tab-pane" id="tab8">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img13.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Levinho</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">11 Aug 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Fortnite</h4>
+                  <p class="card-text">Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite Battle Royale, a free-to-play battle royale game in which up to 100 players fight to be the last person standing.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img14.jpg" style="height:350px; width:600px;" alt="Image" style="height: 402px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Annie Ricard</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">13 May 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Free Fire</h4>
+                  <p class="card-text">Free Fire is a battle royale game developed and published by Garena for Android and iOS.It became the most downloaded mobile game globally in 2019.As of 2023, Free Fire had surpassed 187 million daily active users.Free Fire Max, a graphically enhanced version of Free Fire, was released globally on 28 September 2021.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>         
+        <!-- ============================================= Cars ==============================================-->
+
+        <div class="tab-pane" id="tab9">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img15.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Stephan Winkelmann</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">17 Oct 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Rolls-Royce</h4>
+                  <p class="card-text">Rolls-Royce Holdings plc is a British multinational aerospace and defence company incorporated in February 2011. The company owns Rolls-Royce, a business established in 1904 which today designs, manufactures and distributes power systems for aviation and other industries. The company's administrative and production headquarters are located on the 42-acre (17 ha) Goodwood Estate in Goodwood, West Sussex, England, United Kingdom.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/img16.jpg" style="height:350px; width:600px;" alt="Image" style="height: 376.5px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Zak Brown</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 June 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Mercedes Benz</h4>
+                  <p class="card-text">Mercedes-Benz, commonly referred to as Mercedes and sometimes as Benz, is a German luxury and commercial vehicle automotive brand established in 1926. Mercedes-Benz AG is headquartered in Stuttgart,Baden-Württemberg,Germany. Mercedes-Benz AG produces consumer luxury vehicles and light commercial vehicles badged as Mercedes-Benz.Jellinek named the new cars after his daughter, Mercédès Jellinek, whose Spanish name translated to “mercy.” </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--================================================= sports =============================================-->
+        <div class="tab-pane" id="tab10">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img17.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Badminton</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">16 Jan 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">P.V.Sindhu</h4>
+                  <p class="card-text">Pusarla Venkata Sindhu is an Indian professional badminton player. Considered one of India's most successful sportspersons, Sindhu has won medals at various tournaments such as the Olympics and on the BWF circuit, including a gold at the 2019 World Championships.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img18.jpg"style="height:350px; width:600px;" alt="Image" style="height:351.5px; width: 600px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">FIFA</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 June 2022</p>
+                    </div>
+                  </div>
+                  <br>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Cristiano Ronaldo</h4>
+                  <p class="card-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team.Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--============================================== Movies ===============================================-->
+        <div class="tab-pane" id="tab11">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img19.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">James Cameron</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">19 Feb 2019</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Avatar</h4>
+                  <p class="card-text">Avatar is an American media franchise created by James Cameron, which consists of a planned series of epic science fiction films produced by Lightstorm Entertainment and distributed by 20th Century Studios, as well as associated merchandise, video games and theme park attractions</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img20.jpg" style="height:350px; width:600px;" alt="Image" style="height: 402px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Nick Fury</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">24 Apr 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Avengers</h4>
+                  <p class="card-text">The Avengers are a team of fictional superheroes and the protagonists of the Marvel Cinematic Universe (MCU) media franchise, based on the Marvel Comics team of the same name created by Stan Lee and Jack Kirby in 1963. Founded by S.H.I.E.L.D. Director Nick Fury</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      <!--============================================= Management ==============================================-->
+        <div class="tab-pane" id="tab12">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img21.jpg" style="height:350px; width:600px;" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Derek Shepherd</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 Apr 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;"> Team Management</h4>
+                  <p class="card-text">Team management focuses on motivating a group of employees to work toward a common goal. Differing styles of team management achieve goals in different ways. It's the duty of team managers to support the needs of team members.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/img22.jpg" style="height:350px; width:600px;" alt="Image" style="height: 402px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Meredith Grey</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 June 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Business Management</h4>
+                  <p class="card-text">Business management encompasses strategic planning, decision-making, financial management, and leadership to drive growth and success while adapting to a constantly changing business landscape. </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- ================Modal=============== -->
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- ================Modal header================== -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!--================= Modal body================== -->
+          <div class="modal-body">
+            <p id="modal-date"></p>
+            <h5 id="modal-name"></h5>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <!--============================================= Footer =============================================-->
+    <br><footer id="mainFooter" class="py-5 bg-dark text-white">
+      <div class="container py-md-5">
+        <div class="row justify-content-between align-items-center gy-3">
+          <div class="col-sm-12 col-md-6 text-center text-md-start mb-3">
+            <p>&copy; 2023 Batch4. All rights reserved.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-center text-md-end">
+            <!-- Content for the right side of the footer -->
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="pp/terms.html" style="text-decoration: none;">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="pp/pp.html" style="text-decoration: none;">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="pp/contact.html" style="text-decoration: none;">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- ============================================Script================================================ -->
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
